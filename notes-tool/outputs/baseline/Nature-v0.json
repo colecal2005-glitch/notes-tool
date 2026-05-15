@@ -1,0 +1,63 @@
+{
+  "post": "data/source-posts/Nature.txt",
+  "model": "claude-opus-4-7",
+  "tokens": {
+    "input": 8949,
+    "output": 1377
+  },
+  "cost_usd": 0.2375,
+  "elapsed_s": 17.3,
+  "few_shot_count": 6,
+  "notes": [
+    {
+      "format": "Story",
+      "text": "Howard Zahniser wrote the Wilderness Act in 1956. He revised it 66 times. Steered it through 18 hearings over 8 years. Died of a heart attack in May 1964, four months before LBJ signed it into law. Never saw it pass.\n\nMost Americans have never heard his name.",
+      "char_count": 261
+    },
+    {
+      "format": "Story",
+      "text": "Frank Church was 24 when doctors gave him a few months to live. Testicular cancer. He survived, finished law school, won an upset Senate race in Idaho, and on his deathbed at 59 he didn't want to talk about Vietnam or the CIA.\n\nHe wanted to talk about the wilderness.",
+      "char_count": 268
+    },
+    {
+      "format": "Research Summary",
+      "text": "Western counties with wilderness nearby grew their in-migration by 8% between 1980 and 2010. Comparable counties without wilderness? Zero growth.\n\nThe \"wilderness is elitist\" argument has been wrong for forty years. The data has been sitting there the whole time.",
+      "char_count": 263
+    },
+    {
+      "format": "Emotional Appeal + News",
+      "text": "They aren't trying to delist a single wilderness area. They know the political cost.\n\nInstead: rescind the Roadless Rule. Gut NEPA. Lease the Arctic Refuge coastal plain. Open the Boundary Waters watershed to sulfide mining.\n\nLeave the wilderness technically protected. Destroy everything around it that makes it work.",
+      "char_count": 318
+    },
+    {
+      "format": "Research Summary",
+      "text": "If you drink tap water in Boise, Salt Lake, Denver, Portland, Seattle, or LA, it came from wilderness.\n\n4.5% of the country. 2.7% if you strip out Alaska. That's the last little bit. There isn't more of it being made.",
+      "char_count": 216
+    },
+    {
+      "format": "Emotional Appeal + News",
+      "text": "The Senate voted 50-49 in April to revoke the mineral withdrawal protecting the Boundary Waters watershed from sulfide-ore copper mining.\n\nThe mine sits outside the wilderness. The pollution flows directly into it. That's the whole strategy now.",
+      "char_count": 245
+    },
+    {
+      "format": "Story",
+      "text": "Frank Church's father-in-law called him in 1961 and told him he was out of his mind. If he attached his name to the Wilderness Act, the timber industry and the cattlemen and the miners would end his career.\n\nChurch did it anyway. Then won re-election in '62, '68, and '74.",
+      "char_count": 272
+    },
+    {
+      "format": "Emotional Appeal + Minority",
+      "text": "The argument against wilderness has always been that it's elitist. Only rich East Coast hikers with pack animals will ever use it.\n\nFrank Church pointed out that on his trips into the Sawtooth, he was the only one with a horse. Everyone else had a backpack.\n\nNo entry fee. No permit. No guide. Just legs and time.",
+      "char_count": 313
+    },
+    {
+      "format": "Research Summary",
+      "text": "The Wilderness Act removed discretion from federal agencies on purpose. The Forest Service had spent decades shrinking its own primitive areas every time industry came knocking.\n\nZahniser's fix: put it in statute. Only Congress can undesignate wilderness. In writing. With a recorded vote.\n\nThat's why it's still here.",
+      "char_count": 317
+    },
+    {
+      "format": "Emotional Appeal + News",
+      "text": "The Wilderness Act protects 111.7 million acres across 803 places. An area larger than California.\n\nIt's the most successful land protection idea this country has ever produced. Countries from Finland to South Africa copied it.\n\nAnd most Americans don't know it's under attack right now.",
+      "char_count": 286
+    }
+  ]
+}

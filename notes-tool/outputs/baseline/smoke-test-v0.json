@@ -1,0 +1,63 @@
+{
+  "post": "data/source-posts/smoke-test.txt",
+  "model": "claude-sonnet-4-6",
+  "tokens": {
+    "input": 1880,
+    "output": 700
+  },
+  "cost_usd": 0.0161,
+  "elapsed_s": 11.5,
+  "few_shot_count": 0,
+  "notes": [
+    {
+      "format": "hook",
+      "text": "For two years I had a spreadsheet tracking my morning habits. Cold shower, journaling, no phone, timed deep work blocks. I was proud of it. Then a bad month destroyed the whole thing — and what came back after was completely different.",
+      "char_count": 234
+    },
+    {
+      "format": "hook",
+      "text": "Some of my best writing happened after sleeping in, skipping the walk, and opening email first thing. That broke something in my brain. I'd spent two years optimizing the wrong variable.",
+      "char_count": 185
+    },
+    {
+      "format": "contrarian",
+      "text": "Morning routines don't improve your output. They improve how you feel about your output. That's not the same thing, and the industry selling you 5am wake-ups knows the difference even if you don't.",
+      "char_count": 197
+    },
+    {
+      "format": "contrarian",
+      "text": "Tracking your habits doesn't make you more productive. It makes you feel like a person who has their act together. The feeling is the product. That's what you're actually buying.",
+      "char_count": 178
+    },
+    {
+      "format": "story",
+      "text": "A client left. Freelance dried up. Got sick for two weeks. My optimized morning routine collapsed entirely. When things stabilized, I rebuilt — but I dropped the cold shower immediately, stopped timing deep work, and realized I'd never missed either.",
+      "char_count": 248
+    },
+    {
+      "format": "one-liner",
+      "text": "The morning routine was a security blanket dressed up as productivity.",
+      "char_count": 69
+    },
+    {
+      "format": "question",
+      "text": "What if the anxiety your morning routine is calming is the same anxiety the morning routine created?",
+      "char_count": 99
+    },
+    {
+      "format": "list",
+      "text": "My current morning routine:\n— Make coffee\n— Read something I didn't write\n— Start working\n\nTakes 20 minutes. I write more now than during the two-year optimization era.",
+      "char_count": 168
+    },
+    {
+      "format": "restack-bait",
+      "text": "The spreadsheet gave me the feeling of being productive at 7am every day. Took me two years to notice that feeling and actual output had nothing to do with each other.",
+      "char_count": 166
+    },
+    {
+      "format": "behind-scenes",
+      "text": "This post started as a note-to-self after I realized I'd quietly dropped half my morning habits and my work had gotten better. Took three drafts before I could admit what I was actually optimizing for.",
+      "char_count": 199
+    }
+  ]
+}

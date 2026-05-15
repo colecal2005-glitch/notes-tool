@@ -1,0 +1,63 @@
+{
+  "post": "data/source-posts/Move-to-France.txt",
+  "model": "claude-sonnet-4-6",
+  "tokens": {
+    "input": 4650,
+    "output": 754
+  },
+  "cost_usd": 0.0253,
+  "elapsed_s": 16.1,
+  "few_shot_count": 0,
+  "notes": [
+    {
+      "format": "hook",
+      "text": "A kitchen so small you couldn't open the oven and the silverware drawer at the same time. That was the metaphor. It took them a while to see it. Once they did, they bought a château with a bread oven that predates the United States.",
+      "char_count": 234
+    },
+    {
+      "format": "hook",
+      "text": "There's a historical record of a hidden underground tunnel running from their château to a neighboring town. They haven't found it yet. This is just a thing about their house.",
+      "char_count": 173
+    },
+    {
+      "format": "contrarian",
+      "text": "\"Rent before you buy\" is the most underrated advice in travel writing. Two and a half years living on someone else's château grounds before committing to their own. That's not hesitation. That's how you avoid a very expensive mistake.",
+      "char_count": 233
+    },
+    {
+      "format": "contrarian",
+      "text": "The French don't care if your five-year-old is reading yet. Formal reading doesn't start until six. By seven they're fluent anyway. Meanwhile American parents are panicking about kindergarten benchmarks. Maybe we're the ones doing it wrong.",
+      "char_count": 238
+    },
+    {
+      "format": "story",
+      "text": "They walked into their private forest one morning in April and found a carpet of bluebells — wall to wall, as far as you could see. Not in the listing. Not in the brochure. The realtor never mentioned it. They just stood there with their mouths open.",
+      "char_count": 249
+    },
+    {
+      "format": "one-liner",
+      "text": "The fine print in France is written in invisible ink.",
+      "char_count": 52
+    },
+    {
+      "format": "question",
+      "text": "At what point does \"this apartment is too small\" become \"we should probably move to France and buy a château\"?",
+      "char_count": 109
+    },
+    {
+      "format": "list",
+      "text": "Things nobody tells you about château hunting:\n— The price is never the whole price\n— You will fall in love with forty of them before closing one deal\n— A farmer's ancient land rights can transfer to his children indefinitely\n— \"Livable\" means something very specific and you have to learn it the hard way",
+      "char_count": 306
+    },
+    {
+      "format": "restack-bait",
+      "text": "The life you dream about is sometimes the one you have to actually go build. Nobody is going to hand it to you pre-assembled with good lighting.",
+      "char_count": 144
+    },
+    {
+      "format": "behind-scenes",
+      "text": "Kamille mentioned almost in passing that her neighbor's business card still had his ex-wife's name on it — just one thick line through it — and I knew that detail was going in the piece. Some people are a sentence.",
+      "char_count": 211
+    }
+  ]
+}

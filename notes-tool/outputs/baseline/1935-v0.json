@@ -1,0 +1,63 @@
+{
+  "post": "data/source-posts/1935.txt",
+  "model": "claude-sonnet-4-6",
+  "tokens": {
+    "input": 3387,
+    "output": 1254
+  },
+  "cost_usd": 0.029,
+  "elapsed_s": 23.8,
+  "few_shot_count": 6,
+  "notes": [
+    {
+      "format": "Story",
+      "text": "In 1935, Hitler violated the Versailles Treaty openly — rebuilding his military, reintroducing the draft. Britain and France did nothing. Harvard invited Nazi academics. The Olympics went to Berlin as planned.\n\nChurchill called it 'the years England slept.'\n\nSeventy million people died in the decade that followed.\n\nThe hardest thing about preventive action is that the deaths you prevent stay invisible. You get blamed for the war you started. Nobody credits you for the war you stopped.",
+      "char_count": 434
+    },
+    {
+      "format": "Research Summary",
+      "text": "1935 wasn't a year of great catastrophe. That's exactly what made it catastrophic.\n\nHitler began rearming Germany in open violation of Versailles. The response from the treaty's signatories: nothing. A preventive war in 1935 might have saved 70 million lives. Nobody took it. Historians would have destroyed whoever tried.",
+      "char_count": 318
+    },
+    {
+      "format": "Emotional Appeal + News",
+      "text": "Iran has publicly declared its intention to destroy Israel and the United States. It has spent years secretly pursuing nuclear weapons.\n\nThis is not ambiguous.\n\nThe question being debated right now is whether 2026 will look, to future generations, the way 1935 looks to us — the year everyone saw it coming and decided to wait.",
+      "char_count": 326
+    },
+    {
+      "format": "Story",
+      "text": "Chamberlain flew home from Munich in 1938 waving a piece of paper. 'Peace for our time,' he said. The crowd cheered.\n\nNobody cheered the people warning that the paper meant nothing.\n\nOne year later, Germany invaded Poland. Six years later, 70 million people were dead.\n\nThe lesson isn't that Chamberlain was stupid. It's that inaction looks like wisdom right up until it doesn't.",
+      "char_count": 374
+    },
+    {
+      "format": "Emotional Appeal + Minority",
+      "text": "Six million Jews were killed in part because the world in 1935 decided the threat wasn't imminent enough to act on.\n\nBy the time the threat was imminent, it was too late to prevent the genocide. That's not hindsight. Churchill said so at the time. Nobody listened.\n\nThe people who pay the price for inaction are rarely the ones who chose it.",
+      "char_count": 342
+    },
+    {
+      "format": "Research Summary",
+      "text": "There's an asymmetry that makes preventive action almost politically impossible: the deaths you cause are visible and immediate. The deaths you prevent are hypothetical and invisible.\n\nThis isn't a flaw in human judgment. It's a feature. Voters feel the costs. They can't feel the counterfactual.\n\nWorld leaders in 1935 faced this exact problem. So do world leaders in 2026.",
+      "char_count": 363
+    },
+    {
+      "format": "Emotional Appeal + News",
+      "text": "False negative: you don't act when you should have. 70 million dead.\nFalse positive: you act when you shouldn't have. A war that didn't need to happen.\n\nStriking the balance between those two errors is the actual job of a world leader. Not the speeches. Not the summits.\n\nThe decisions made about Iran in the next 12 months are that calculation, live.",
+      "char_count": 349
+    },
+    {
+      "format": "Story",
+      "text": "Hitler's rearmament in 1935 was not a secret. It was not subtle. He wrote about his intentions in a book available in every library.\n\nThe countries that had the power to stop him chose, instead, to host his Olympics, invite his diplomats to dinner, and sign trade agreements with his government.\n\nNot because they were foolish. Because the cost of acting was visible and the cost of not acting was still theoretical.\n\nIt stopped being theoretical in 1939.",
+      "char_count": 447
+    },
+    {
+      "format": "Emotional Appeal + News",
+      "text": "The Munich deal is remembered as the defining example of failed appeasement. Chamberlain is a historical punchline.\n\nBut in September 1938, most of Britain was relieved. The newspapers praised him. He won the news cycle completely.\n\nHistory doesn't grade on a curve for good intentions. It grades on outcomes. That's what makes Iran so uncomfortable to think about right now.",
+      "char_count": 370
+    },
+    {
+      "format": "Research Summary",
+      "text": "Graham Allison's Thucydides Trap gets cited constantly. 1935 almost never does.\n\nBut 1935 is the more useful lesson — not about rising powers clashing, but about what happens when the window to act cheaply closes and nobody moves through it.\n\nBy 1939 the cheap window was gone. The expensive window cost 70 million lives.",
+      "char_count": 320
+    }
+  ]
+}

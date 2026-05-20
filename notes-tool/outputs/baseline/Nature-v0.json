@@ -1,63 +1,63 @@
 {
   "post": "data/source-posts/Nature.txt",
-  "model": "claude-opus-4-7",
+  "model": "claude-sonnet-4-6",
   "tokens": {
-    "input": 8949,
-    "output": 1377
+    "input": 6244,
+    "output": 1802
   },
-  "cost_usd": 0.2375,
-  "elapsed_s": 17.3,
+  "cost_usd": 0.0458,
+  "elapsed_s": 40,
   "few_shot_count": 6,
   "notes": [
     {
       "format": "Story",
-      "text": "Howard Zahniser wrote the Wilderness Act in 1956. He revised it 66 times. Steered it through 18 hearings over 8 years. Died of a heart attack in May 1964, four months before LBJ signed it into law. Never saw it pass.\n\nMost Americans have never heard his name.",
-      "char_count": 261
-    },
-    {
-      "format": "Story",
-      "text": "Frank Church was 24 when doctors gave him a few months to live. Testicular cancer. He survived, finished law school, won an upset Senate race in Idaho, and on his deathbed at 59 he didn't want to talk about Vietnam or the CIA.\n\nHe wanted to talk about the wilderness.",
-      "char_count": 268
-    },
-    {
-      "format": "Research Summary",
-      "text": "Western counties with wilderness nearby grew their in-migration by 8% between 1980 and 2010. Comparable counties without wilderness? Zero growth.\n\nThe \"wilderness is elitist\" argument has been wrong for forty years. The data has been sitting there the whole time.",
-      "char_count": 263
+      "text": "Howard Zahniser spent eight years writing and rewriting the Wilderness Act. Sixty-six drafts. Eighteen hearings. He lobbied Congress through the Eisenhower and Kennedy administrations, revised the bill every time an industry group demanded a change, and kept going.\n\nHe died in May 1964. Four months before Lyndon Johnson signed it into law.\n\nHe never saw it pass.\n\nThat's the bill that now protects 111.7 million acres. The one the current administration is quietly dismantling around the edges, one roadless area and one mining lease at a time. The one most Americans have never read a word of.\n\nMy new piece covers what the Wilderness Act actually is, how it works, who fought for it, and exactly what's being done to it right now.",
+      "char_count": 616
     },
     {
       "format": "Emotional Appeal + News",
-      "text": "They aren't trying to delist a single wilderness area. They know the political cost.\n\nInstead: rescind the Roadless Rule. Gut NEPA. Lease the Arctic Refuge coastal plain. Open the Boundary Waters watershed to sulfide mining.\n\nLeave the wilderness technically protected. Destroy everything around it that makes it work.",
-      "char_count": 318
+      "text": "The Trump administration just rescinded the Roadless Rule — stripping protection from 58.5 million acres of national forest land.\n\nThat's not wilderness. That's the buffer around wilderness. The land that feeds the rivers that run through it. The migration corridors. The headwaters.\n\nLeave the wilderness designation technically intact. Destroy everything that makes the wilderness function. That is the strategy, and it's working because most people don't know enough about the law to see what's being taken.",
+      "char_count": 458
     },
     {
       "format": "Research Summary",
-      "text": "If you drink tap water in Boise, Salt Lake, Denver, Portland, Seattle, or LA, it came from wilderness.\n\n4.5% of the country. 2.7% if you strip out Alaska. That's the last little bit. There isn't more of it being made.",
-      "char_count": 216
-    },
-    {
-      "format": "Emotional Appeal + News",
-      "text": "The Senate voted 50-49 in April to revoke the mineral withdrawal protecting the Boundary Waters watershed from sulfide-ore copper mining.\n\nThe mine sits outside the wilderness. The pollution flows directly into it. That's the whole strategy now.",
-      "char_count": 245
+      "text": "Wilderness areas cover 4.5% of the United States. Strip out Alaska and it's 2.7% of the contiguous 48.\n\nThat 2.7% sequesters carbon at roughly the same rate as all other federal lands combined. It produces a disproportionate share of drinking water for Western cities. Counties with wilderness nearby grew in-migration by an average of 8% from 1980 to 2010. Counties without wilderness: zero growth.\n\nThe argument against wilderness has always been that it's elitist — land for rich hikers with horses. Frank Church, who shepherded the bill through the Senate, spent his career pointing out that on his own trips into the Sawtooth, he was the only one with a horse. Everyone else had a backpack.",
+      "char_count": 668
     },
     {
       "format": "Story",
-      "text": "Frank Church's father-in-law called him in 1961 and told him he was out of his mind. If he attached his name to the Wilderness Act, the timber industry and the cattlemen and the miners would end his career.\n\nChurch did it anyway. Then won re-election in '62, '68, and '74.",
-      "char_count": 272
+      "text": "Frank Church was 32 when he got to the Senate, already a cancer survivor who'd been given months to live at 24. When the lead sponsor of the Wilderness Act had a gallbladder attack the night before the 1961 floor debate, Church was asked to take over.\n\nHis staff warned him the timber industry, mining industry, and cattlemen would come for him. His own father-in-law called and told him he was out of his mind.\n\nHe did it anyway. Took every political hit. Won re-election three more times. Passed the Central Idaho Wilderness Act in his final year in office — 2.4 million acres, still the largest contiguous wilderness in the lower 48.\n\nThey named it after him while he was dying. He had four weeks left. When a friend visited at his bedside, Church didn't want to talk about Vietnam or the CIA. He wanted to talk about the wilderness.",
+      "char_count": 788
     },
     {
       "format": "Emotional Appeal + Minority",
-      "text": "The argument against wilderness has always been that it's elitist. Only rich East Coast hikers with pack animals will ever use it.\n\nFrank Church pointed out that on his trips into the Sawtooth, he was the only one with a horse. Everyone else had a backpack.\n\nNo entry fee. No permit. No guide. Just legs and time.",
-      "char_count": 313
-    },
-    {
-      "format": "Research Summary",
-      "text": "The Wilderness Act removed discretion from federal agencies on purpose. The Forest Service had spent decades shrinking its own primitive areas every time industry came knocking.\n\nZahniser's fix: put it in statute. Only Congress can undesignate wilderness. In writing. With a recorded vote.\n\nThat's why it's still here.",
-      "char_count": 317
+      "text": "If you live in Boise, Salt Lake City, Denver, Portland, Seattle, or Los Angeles and you drink tap water — you drink water that came from wilderness.\n\nYou didn't vote on it. You probably don't think about it. But someone put those acres on paper sixty years ago, held the line against every industry lobby that wanted them, and the water kept running clean.\n\nThe people who built that system are mostly dead. The people dismantling it are counting on the rest of us not knowing enough to notice.",
+      "char_count": 484
     },
     {
       "format": "Emotional Appeal + News",
-      "text": "The Wilderness Act protects 111.7 million acres across 803 places. An area larger than California.\n\nIt's the most successful land protection idea this country has ever produced. Countries from Finland to South Africa copied it.\n\nAnd most Americans don't know it's under attack right now.",
-      "char_count": 286
+      "text": "A 50-49 Senate vote just revoked the mineral withdrawal protecting the Boundary Waters Canoe Area Wilderness from sulfide-ore copper mining.\n\nThe mine won't sit inside the wilderness. It doesn't have to. The pollution flows in through the watershed.\n\nThis is the whole playbook right now: don't touch the designation. Touch everything around it. A wilderness area with its hydrology poisoned and its buffer lands opened to roads and drill rigs isn't a wilderness. It's a line on a map.",
+      "char_count": 472
+    },
+    {
+      "format": "Research Summary",
+      "text": "The Wilderness Act has been amended and expanded almost every year since 1964. It started at 9.1 million acres across 13 states. It now covers 803 separate areas across 44 states and Puerto Rico.\n\nIn sixty years, the system has almost never shrunk. That's not an accident — it's the structural genius of the original law. Zahniser wrote it so that only Congress could designate wilderness, and only Congress could take it away. He'd watched the Forest Service spend decades creating protected areas and then quietly carving them up whenever a road or mine seemed convenient. He removed that discretion from the agencies entirely.\n\nThat structure is what's being worked around right now. You can't undo wilderness by executive order. So instead you undo everything else.",
+      "char_count": 733
+    },
+    {
+      "format": "Emotional Appeal + Minority",
+      "text": "There are grizzly bears still living in the lower 48 for exactly one reason: wilderness existed for them to live in.\n\nNot a nature preserve with an entry fee. Not a zoo. Actual untrammeled land, legally protected from roads, motors, logging, and mining, where a bear can move through a landscape without hitting a fence.\n\nThere are roughly 1,800 of them left south of Canada. All in or near designated wilderness. The habitat math on this is not complicated.",
+      "char_count": 449
+    },
+    {
+      "format": "Story",
+      "text": "Aldo Leopold convinced the Forest Service to protect the Gila Wilderness in New Mexico in 1924. First designated wilderness in the world.\n\nHoward Zahniser drafted the federal law in 1956 and spent eight years getting it passed. Died before it happened.\n\nFrank Church carried it through the Senate, took the industry blowback, and kept winning elections in Idaho anyway. Named the biggest wilderness in the lower 48 after him while he was in his final weeks.\n\nThree men. Decades of work. An area larger than California now under the strongest land protection in American law.\n\nMy latest piece tells the whole story — who built the Wilderness Act, how it actually functions, and what's being done to it right now while most people aren't watching.",
+      "char_count": 712
+    },
+    {
+      "format": "Emotional Appeal + News",
+      "text": "The Fix Our Forests Act is moving through the Senate right now. It shortens environmental review periods, strips judicial oversight, and makes it dramatically easier to log and mine in lands adjacent to designated wilderness.\n\nIt's being sold as wildfire prevention. Some of what it does is wildfire prevention. A lot of what it does is make the wilderness system functionally inoperable by clearing out the surrounding landscape that keeps it alive.\n\nThe wilderness designation stays. Everything that makes it work gets cut.",
+      "char_count": 509
     }
   ]
 }

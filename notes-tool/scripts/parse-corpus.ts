@@ -91,20 +91,21 @@ const col = (name: string): number => {
     throw new Error(`Column "${name}" not found. Headers: ${headers.join(", ")}`);
   return idx;
 };
+const optCol = (name: string): number => headers.indexOf(name);
 
 const idIdx      = col("id");
 const textIdx    = col("note_text");
-const authorIdx  = col("author_pub");
-const nicheIdx   = col("niche");
-const engIdx     = col("engagement");
-const linkedIdx  = col("linked_to_post");
+const authorIdx  = optCol("author_pub");
+const nicheIdx   = optCol("niche");
+const engIdx     = optCol("engagement");
+const linkedIdx  = optCol("linked_to_post");
 const formatIdx  = col("format_guess");
 const starredIdx = col("starred");
 
 const notes: CorpusNote[] = records
   .slice(1)
   .map((cells) => {
-    const get = (i: number) => (cells[i] ?? "").trim();
+    const get = (i: number) => (i === -1 ? "" : (cells[i] ?? "").trim());
 
     const engRaw = get(engIdx).toLowerCase();
     const engNorm: "high" | "medium" | "low" = ["high", "medium", "low"].includes(engRaw)

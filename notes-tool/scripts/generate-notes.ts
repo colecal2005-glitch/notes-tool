@@ -19,7 +19,8 @@ type CorpusNote = {
 };
 
 type GeneratedNote = {
-  format: string;
+  format?: string;
+  shape?: string;
   text: string;
   char_count: number;
 };
@@ -103,7 +104,7 @@ async function main() {
 
   const response = await client.messages.create({
     model: model.id,
-    max_tokens: 2000,
+    max_tokens: 4096,
     system: systemMessage,
     messages: [{ role: "user", content: postContent }],
   });
@@ -116,7 +117,11 @@ async function main() {
   let notes: GeneratedNote[] = [];
   try {
     const jsonMatch = rawText.match(/\[[\s\S]*\]/);
-    notes = jsonMatch ? JSON.parse(jsonMatch[0]) : [];
+    if (!jsonMatch) {
+      console.error("No JSON array found in response. Raw output:\n", rawText);
+      process.exit(1);
+    }
+    notes = JSON.parse(jsonMatch[0]);
   } catch {
     console.error("Failed to parse JSON response. Raw output:\n", rawText);
     process.exit(1);
@@ -124,7 +129,7 @@ async function main() {
 
   // --- Print results ---
   notes.forEach((note) => {
-    console.log(`--- [${note.format}] (${note.char_count} chars) ---`);
+    console.log(`--- [${note.shape ?? note.format}] (${note.char_count} chars) ---`);
     console.log(note.text);
     console.log();
   });

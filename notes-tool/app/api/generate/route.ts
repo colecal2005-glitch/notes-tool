@@ -8,6 +8,8 @@ export const maxDuration = 60;
 
 function isAllowedOrigin(origin: string): boolean {
   return (
+    origin === "https://notefactory.app" ||
+    origin === "https://www.notefactory.app" ||
     origin === "https://notes-tool.vercel.app" ||
     (origin.startsWith("https://notes-tool-") && origin.endsWith(".vercel.app")) ||
     origin === "http://localhost:3000"

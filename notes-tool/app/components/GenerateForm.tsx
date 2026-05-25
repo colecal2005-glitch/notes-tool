@@ -31,7 +31,7 @@ function PaywallCard() {
           You&apos;ve used your free generation
         </p>
         <p className="text-white/45 text-sm mb-8">
-          Unlock unlimited Notes for $19/mo
+          Get 25 generations for $10
         </p>
         <a
           href={stripeUrl}

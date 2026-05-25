@@ -1,0 +1,52 @@
+{
+  "post": "https://post.10xresearch.com/p/10x-volatility-edge-bitcoin-the-four?utm_source=%2Fsearch%2Ffree%20post&utm_medium=reader2",
+  "source_url": "https://post.10xresearch.com/p/10x-volatility-edge-bitcoin-the-four?utm_source=%2Fsearch%2Ffree%20post&utm_medium=reader2",
+  "model": "claude-sonnet-4-6",
+  "tokens": {
+    "generation": {
+      "input": 4983,
+      "output": 555
+    },
+    "matching": {
+      "input": 6581,
+      "output": 66
+    }
+  },
+  "cost_usd": {
+    "generation": 0.0233,
+    "matching": 0.0207,
+    "total": 0.044
+  },
+  "elapsed_s": 11.3,
+  "few_shot_count": 5,
+  "image_count": 8,
+  "notes": [
+    {
+      "shape": "stat drop + curiosity gap",
+      "text": "Bitcoin's aggregate gamma exposure hit -$3.2 billion at the $82,000 strike.\n\nThat number has been sitting there since mid-January, suppressing every rally, cushioning every dip, and producing the exact sideways chop that's frustrated traders for months.\n\nIt doesn't stay there forever. Two expiry dates change the math entirely — and when they clear, the mechanical drag disappears with them.",
+      "char_count": 367,
+      "source": "The post details Bitcoin's -$3.2B negative gamma exposure concentrated at $82,000 and explains how the May 29 and June 26 expiries will clear it.",
+      "notes": null,
+      "image_url": "https://substackcdn.com/image/fetch/$s_!neCj!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8a3afdd6-dc45-4205-affa-a89151e63847_1041x589.png",
+      "image_local_path": "outputs/baseline/10x-volatility-edge-bitcoin-the-four/images/img-6.png"
+    },
+    {
+      "shape": "contrarian read",
+      "text": "Daily Bitcoin option volume collapsed from $7.6 billion to $2.1 billion.\n\nMost people read that as fear. It's the opposite. An exhausted hedging community that has largely finished selling. The wall of supply is thinning.\n\nWhen the remaining hedgers are forced to cover — by price, by expiry, by catalyst — there's less and less offsetting flow to absorb the move.",
+      "char_count": 349,
+      "source": "The post argues that collapsing option volume signals exhausted sellers, not fear — and that declining volume into a price recovery means structural supply is thinning.",
+      "notes": null,
+      "image_url": "https://substackcdn.com/image/fetch/$s_!aOef!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0bc2ebdc-4da0-40c5-8590-d268d7c63a18_1081x604.png",
+      "image_local_path": "outputs/baseline/10x-volatility-edge-bitcoin-the-four/images/img-5.png"
+    },
+    {
+      "shape": "setup reveal",
+      "text": "The consensus view embedded in Bitcoin's options book right now: sideways to lower.\n\nNet skew across all expiries is negative. Call overwriting for yield is the dominant institutional trade. Put implied volatility still trades at a premium to calls.\n\nThe market is positioned defensively into a week with two catalysts that could force every one of those hedges to unwind at once.\n\nThe full trade breakdown — four specific structures, strikes included — is in this week's Volatility Edge.",
+      "char_count": 440,
+      "source": "The post notes that despite Bitcoin's recovery, options positioning remains net defensive, and identifies the Kevin Warsh confirmation vote and CLARITY Act progress as the week's two key catalysts.",
+      "notes": null,
+      "image_url": "https://substackcdn.com/image/fetch/$s_!SOw8!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ffc5dacf7-43ef-4774-8808-0998aeed23df_1069x597.png",
+      "image_local_path": "outputs/baseline/10x-volatility-edge-bitcoin-the-four/images/img-4.png"
+    }
+  ]
+}

@@ -1,34 +1,52 @@
 {
   "post": "data/source-posts/Tech1.txt",
+  "source_url": null,
   "model": "claude-sonnet-4-6",
   "tokens": {
-    "input": 5695,
-    "output": 618
+    "generation": {
+      "input": 5695,
+      "output": 436
+    },
+    "matching": {
+      "input": 0,
+      "output": 0
+    }
   },
-  "cost_usd": 0.0264,
-  "elapsed_s": 13.1,
+  "cost_usd": {
+    "generation": 0.0236,
+    "matching": 0,
+    "total": 0.0236
+  },
+  "elapsed_s": 11.6,
   "few_shot_count": 5,
+  "image_count": 0,
   "notes": [
     {
       "shape": "analogy reframe",
-      "text": "The Facebook friend graph never disappeared. It just became infrastructure — one of many inputs into the feed algorithm, consumed at the API layer, invisible to the actual user.\n\nThe same thing is starting to happen to the CRM.\n\nSalesforce isn't going away. But the account executive who opens his laptop and finds a research agent, a dialer coach, and an orchestration layer waiting for him — that stack is the newsfeed. That's where the valuable thing lives now.",
-      "char_count": 430,
-      "source": "The post's central analogy: the Facebook friend graph becoming an API-layer input to the news feed, mapped onto CRM becoming just one input into the system of intelligence.",
-      "notes": null
+      "text": "The friend graph didn't die when the news feed took over Facebook. It just became infrastructure.\n\nThat's exactly what's happening to the CRM right now.",
+      "char_count": 152,
+      "source": "The Facebook friend graph / news feed analogy used to explain how the CRM is becoming 'just one of many inputs' to an intelligence layer above it.",
+      "notes": null,
+      "image_url": null,
+      "image_local_path": null
     },
     {
-      "shape": "contrarian stat drop",
-      "text": "CRM usage has actually gone up since AI agents started taking over GTM workflows.\n\nNot down. Up.\n\nThe agents listening to calls and writing structured notes back in are making the underlying data richer than it's ever been — giving reps fresh reason to consult a system they used to neglect.\n\nBut here's the tension: the more AI agents automate the workflows on top, the more the CRM looks like a database rather than a destination. A very large, carefully curated, well-integrated database. But a database nonetheless.",
-      "char_count": 499,
-      "source": "The counterintuitive finding from the GTM survey that CRM usage has risen since AI adoption, paired with the argument that the CRM is becoming infrastructure.",
-      "notes": null
+      "shape": "scene drop",
+      "text": "The typical account executive opens his laptop in the morning and finds waiting for him: a research agent that already read the 10-K, a dialer that coaches him on objections in real time, an orchestration layer that writes call notes back into Salesforce without him touching anything.\n\nNone of it, by itself, is earthshaking.\n\nTaken together, you recognize exactly what this is.",
+      "char_count": 362,
+      "source": "The 'bottom of the morning' scene describing what a modern AE's AI-assisted workflow looks like.",
+      "notes": null,
+      "image_url": null,
+      "image_local_path": null
     },
     {
-      "shape": "scene snap",
-      "text": "A VP of Sales, a few years from now, doesn't start her morning in Salesforce staring at a static account list.\n\nShe opens a prioritized feed: which accounts had material news overnight, which prospects just came in-market, which pipeline deals have gone suspiciously quiet.\n\nHer new hire six weeks in is walking into meetings better prepped than the ten-year veteran at the next desk.\n\nAnd when a rep leaves, the institutional memory — every account nuance, every relationship built over years — doesn't walk out with them.\n\nThis is what it looks like when the system of intelligence becomes the product.",
-      "char_count": 553,
-      "source": "The post's 'VP of Sales a few years hence' scene describing the daily prioritization feed, better-prepared reps, and institutional memory as a shippable asset.",
-      "notes": null
+      "shape": "contrarian thesis punch",
+      "text": "\"All our customer data is in Salesforce\" used to be a switching cost.\n\nIn five years it won't be. The stickiness is migrating — out of the database, into the reasoning layer that sits above it and treats the database like infrastructure.\n\nSalesforce isn't going away. It's becoming the friend graph.",
+      "char_count": 291,
+      "source": "The argument that switching costs shift from data accumulation to orchestration, and that the CRM becomes 'one of many systems of record' the intelligence layer orchestrates across.",
+      "notes": null,
+      "image_url": null,
+      "image_local_path": null
     }
   ]
 }

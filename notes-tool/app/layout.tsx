@@ -15,8 +15,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Notes Tool — Turn any Substack post into 10 great Notes",
-  description: "Paste your post, get 10 Notes in 10 formats, copy the ones you'd actually publish. $19/mo.",
+  title: "Notes Tool — Turn any Substack post into 3 great Notes",
+  description: "Paste your post, get 3 Notes in different formats, copy the ones you'd actually publish. $19/mo.",
 };
 
 export default function RootLayout({

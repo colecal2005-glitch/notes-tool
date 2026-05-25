@@ -6,14 +6,17 @@ import { matchImages } from "@/lib/match-images";
 // Vercel Pro required for durations beyond 10s — scrape + generate + image match takes 25-45s
 export const maxDuration = 60;
 
-const ALLOWED_ORIGINS = [
-  "https://notes-tool.vercel.app",
-  "http://localhost:3000",
-];
+function isAllowedOrigin(origin: string): boolean {
+  return (
+    origin === "https://notes-tool.vercel.app" ||
+    (origin.startsWith("https://notes-tool-") && origin.endsWith(".vercel.app")) ||
+    origin === "http://localhost:3000"
+  );
+}
 
 export async function POST(req: NextRequest) {
   const origin = req.headers.get("origin") ?? "";
-  if (!ALLOWED_ORIGINS.includes(origin)) {
+  if (!isAllowedOrigin(origin)) {
     return NextResponse.json({ error: "Forbidden" }, { status: 403 });
   }
 

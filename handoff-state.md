@@ -4,7 +4,7 @@
 
 ## Last phase completed
 
-**Phase:** Vercel deployment + layout fix
+**Phase:** Free trial + paywall
 **Date:** 2026-05-25
 
 ---
@@ -12,38 +12,44 @@
 ## What got built / changed
 
 ### Files modified
-- `notes-tool/app/layout.tsx` — updated metadata title/description from "10 great Notes" to "3 great Notes"
+- `notes-tool/app/components/GenerateForm.tsx` — added localStorage-based free trial gate + PaywallCard component
 
-### Vercel deployment
-- Project was already connected to Vercel (`notes-tool.vercel.app`) but Root Directory was not set
-- Fixed: set Root Directory to `notes-tool` in Vercel → Settings → General
-- Added `ANTHROPIC_API_KEY` to Vercel environment variables (Production)
-- Redeployed — **live and working at `notes-tool.vercel.app`**
-- Running on Hobby plan (no Pro needed — pipeline completes within Hobby timeout in practice)
+### What was built
+- `hasUsed` state read from `localStorage` key `notes_used` on mount
+- After successful generation: sets `localStorage.setItem('notes_used', 'true')`
+- If `hasUsed && !result`: renders `PaywallCard` instead of the form
+- `PaywallCard` also renders inline below results on first use (upsell while reading notes)
+- Clicking "Generate for another post →" after use shows paywall
+- Return visitors hit paywall immediately on page load
+- Paywall copy: "You've used your free generation" / "Get 25 generations for $10"
+- Button reads `NEXT_PUBLIC_STRIPE_PAYMENT_LINK` env var (placeholder set in `.env.local`)
+
+### Deployed
+- Pushed to `github.com/colecal2005-glitch/notes-tool` → auto-deployed to `notes-tool.vercel.app`
 
 ---
 
 ## Verified working (production)
 
-- [x] `notes-tool.vercel.app` loads correctly
-- [x] Pasting a Substack URL generates 3 notes with images
-- [x] Hobby plan is sufficient (no timeout issues observed)
+- [x] Paywall logic committed and deployed
+- [ ] Stripe Payment Link not yet wired — Stripe ID verification in progress
 
 ---
 
 ## Current product flow (as-built)
 
 ```
-User pastes URL → POST /api/generate
-  → scrapePost(url)            [lib/scrape.ts]        ~3-5s
-  → generateNotes(text)        [lib/generate.ts]       ~15-20s
-  → matchImages(notes, images) [lib/match-images.ts]   ~8-12s
-  → { notes, post } returned to browser
+First visit:
+  User pastes URL → POST /api/generate → notes displayed → PaywallCard shown below results
+  localStorage flag set: notes_used = true
+
+Return visit / second attempt:
+  PaywallCard shown immediately → "Unlock unlimited →" button → Stripe Payment Link
 ```
 
-Notes returned: exactly 3 (prompt hardcoded to `"Produce exactly 3 Notes"`)
+Notes returned: exactly 3
 Model: `claude-sonnet-4-6`
-Cost per run: ~$0.04-0.06 (generation + image matching)
+Cost per run: ~$0.04-0.06
 
 ---
 
@@ -51,7 +57,8 @@ Cost per run: ~$0.04-0.06 (generation + image matching)
 
 | Var | Where | Notes |
 |-----|-------|-------|
-| `ANTHROPIC_API_KEY` | `notes-tool/.env.local` (local) + Vercel dashboard (Production) | Both set and working |
+| `ANTHROPIC_API_KEY` | `notes-tool/.env.local` + Vercel dashboard | Set and working |
+| `NEXT_PUBLIC_STRIPE_PAYMENT_LINK` | `notes-tool/.env.local` (blank placeholder) + Vercel dashboard (not yet set) | Add once Stripe ID verified |
 
 ---
 
@@ -64,40 +71,42 @@ Cost per run: ~$0.04-0.06 (generation + image matching)
 
 ## Next session priorities (in order)
 
-### 1. Free trial + paywall (2-3 hours) ← START HERE
-- 1 free generation per visitor tracked via `localStorage`
-- After first use: show a paywall card instead of results
-- Paywall card: "You've used your free generation. $19/mo for unlimited." + Stripe Payment Link button
-- No database needed — just a `localStorage` flag (`notes_used: true`)
-- Implementation: in `GenerateForm.tsx`, check localStorage before submitting; after successful generation, set the flag; on next visit, render paywall card instead of form
+### 1. Wire Stripe Payment Link ← START HERE (15 min)
+- Stripe ID verification is in progress — complete it first
+- In Stripe dashboard: Products → create a one-time $10 product for 25 generations → Payment Links → create link
+- Copy the URL (`https://buy.stripe.com/...`)
+- Add to Vercel: Settings → Environment Variables → `NEXT_PUBLIC_STRIPE_PAYMENT_LINK` = the URL
+- Trigger a redeploy (push any small change or click "Redeploy" in Vercel dashboard)
+- Test: visit `notes-tool.vercel.app` in a fresh browser (or incognito), generate once, confirm paywall button works
 
-### 2. Stripe Payment Link (1 hour)
-- Create a $19/mo recurring product in Stripe dashboard
-- Create a Payment Link
-- Add the URL to an env var: `NEXT_PUBLIC_STRIPE_PAYMENT_LINK`
-- Wire the paywall card button to that URL
+### 2. Track paid users / enforce 25-generation limit
+- Right now there is no enforcement of the 25-generation limit — the paywall is purely honor-based (localStorage)
+- Options (in order of complexity):
+  a. **Simple:** issue a coupon code on payment, user enters code to unlock 25 more (no backend needed)
+  b. **Medium:** Stripe webhook → write to Vercel KV → check on each `/api/generate` call
+  c. **Full:** Supabase auth + credits column (only after validating willingness to pay)
+- Recommended: start with (a) to validate demand, upgrade later
 
-### 3. Basic rate limiting (30 min) — do before any public sharing
+### 3. Basic rate limiting (do before any public sharing)
 - `/api/generate` is fully open — no auth, no limits
-- Simplest option: Vercel KV (key-value store) to count requests per IP, cap at ~5/day
-- Alternative: referer check middleware so only the UI can call the endpoint
-- Do this before posting the URL anywhere public
+- Simplest: Vercel KV to count requests per IP, cap at ~5/day
+- Alternative: middleware referer check so only the UI can call the endpoint
 
-### 4. Auth (Supabase) — only after validating willingness to pay
-- Only build after someone actually tries to pay
-- Magic-link auth is right for this audience
-- Supabase free tier is fine for MVP
+### 4. Custom domain (optional)
+- Domain not yet purchased
+- Easiest path: buy directly in Vercel dashboard (Settings → Domains) — auto-configures DNS
+- Suggested names to explore: notesbyai, substacknotes, notesgen, etc.
 
 ---
 
 ## Known quirks / gotchas
 
 - **Generation takes 25-40s.** Scrape (3-5s) + generate (15-20s) + image match (8-12s). Normal. UI shows spinner.
-- **Hobby plan works.** Despite `maxDuration = 60` in the route, Hobby plan has been sufficient in practice.
+- **localStorage paywall is bypassable** — user can clear browser storage. Acceptable for MVP.
+- **Hobby plan works.** Despite `maxDuration = 60` in the route, Hobby plan has been sufficient.
 - **Image matching is best-effort.** Images that can't be fetched (403, too large >3MB, too small <2KB) are silently skipped.
-- **Corpus + prompt loaded at request time** from disk. Works on Vercel because `outputFileTracingIncludes` is set in `next.config.ts`.
 - **No `.env.local` in repo** (gitignored). Local dev requires `notes-tool/.env.local` with `ANTHROPIC_API_KEY=...`.
-- **`@/*` path alias** maps to `notes-tool/` root. All `lib/` imports use `@/lib/...`.
+- **`@/*` path alias** maps to `notes-tool/` root.
 
 ---
 
@@ -107,24 +116,20 @@ Cost per run: ~$0.04-0.06 (generation + image matching)
 notes-tool/
   app/
     api/generate/route.ts       ← POST endpoint (maxDuration = 60)
-    components/GenerateForm.tsx ← interactive form + results — paywall logic goes here
+    components/GenerateForm.tsx ← form + results + paywall logic (PaywallCard lives here)
     viewer/                     ← internal tool (read-only, don't touch)
     page.tsx                    ← homepage
     layout.tsx                  ← fonts, metadata
   lib/
-    scrape.ts                   ← web-safe scraper
-    generate.ts                 ← note generation
-    match-images.ts             ← image matching
-  scripts/
-    generate-notes.ts           ← CLI (unchanged)
-    scripts/lib/scrape.ts       ← CLI scraper with disk cache (unchanged)
-    scripts/lib/match-images.ts ← CLI image matcher (unchanged)
+    scrape.ts
+    generate.ts
+    match-images.ts
   prompts/
-    substack-notes-v0.md        ← system prompt (edit to tune output)
-    anti-patterns.md            ← injected into system prompt
+    substack-notes-v0.md
+    anti-patterns.md
   data/
-    corpus.json                 ← few-shot examples (sampled at runtime)
-  .env.local                    ← ANTHROPIC_API_KEY (not in git)
+    corpus.json
+  .env.local                    ← ANTHROPIC_API_KEY + NEXT_PUBLIC_STRIPE_PAYMENT_LINK (blank)
   next.config.ts
   package.json
 ```

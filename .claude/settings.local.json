@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx tsc *)",
+      "Bash(git -C \"c:\\\\Users\\\\colec\\\\OneDrive\\\\Documents\\\\SubStack-Notes\" remote -v)",
+      "Bash(git -C \"c:\\\\Users\\\\colec\\\\OneDrive\\\\Documents\\\\SubStack-Notes\" status)",
+      "Bash(git -C \"c:\\\\Users\\\\colec\\\\OneDrive\\\\Documents\\\\SubStack-Notes\" log --oneline -5)",
+      "Bash(git -C \"c:\\\\Users\\\\colec\\\\OneDrive\\\\Documents\\\\SubStack-Notes\" rebase --continue --no-edit)",
+      "Bash(git -C \"c:\\\\Users\\\\colec\\\\OneDrive\\\\Documents\\\\SubStack-Notes\" rebase --continue)",
+      "Bash(npm install *)",
+      "Bash(npm audit *)",
+      "Bash(node -e \"const p = require\\('./package.json'\\); ['@supabase/supabase-js','@supabase/ssr','stripe'].forEach\\(k => console.log\\(k, p.dependencies[k]\\)\\)\")"
+    ]
+  }
+}

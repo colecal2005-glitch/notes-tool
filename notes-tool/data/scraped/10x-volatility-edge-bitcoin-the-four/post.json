@@ -1,0 +1,64 @@
+{
+  "url": "https://post.10xresearch.com/p/10x-volatility-edge-bitcoin-the-four?utm_source=%2Fsearch%2Ffree%20post&utm_medium=reader2",
+  "slug": "10x-volatility-edge-bitcoin-the-four",
+  "title": "10x Volatility Edge: Bitcoin, the Four-Month Overhang Is Lifting",
+  "text": "A weekend survey on expanding our Bitcoin volatility coverage revealed something unexpected: many Market Updates subscribers don’t know we offer four subscription tiers.Market Updates focuses on Bitcoin and broad market analysis, which most of you already receive.10x Research Market Updates is a reader-supported publication. To receive new posts and support my work, consider becoming a free or paid subscriber.SubscribeTrading Signals goes further. It includes our 10x Volatility Edge (weekly options analysis), frequent trading signals across crypto, crypto equities, and select stocks, plus weekly altcoin analysis. Subscribers use it primarily for upside leverage and yield generation through options, alongside active signal-driven trading.CIO Strategy is designed for institutional investors. It covers Bitcoin regime allocation, regular on-chain analysis, technical analysis, and weekly crypto equity research (if interested in upgrading, info@10xresearch.com)What Matters bridges macro- and digital assets. Each issue builds an investment thesis around one of four themes: AI infrastructure, space & frontier technology, monetary systems, and commodities, and connects it back to crypto markets. The focus is thematic: identifying high-conviction ideas across traditional asset markets.We also set up a simple 4-question model that helps you find the product that is most relevant for you (Which 10x Research product is right for you).Several readers have asked about our Bitcoin options research, published weekly in 10x Volatility Edge. Market Updates subscribers can access it by upgrading to Trading Signals. Upgrade here.Trading Signals (incl. Market Updates)10x Volatility Edge 2026 05 11677KB ∙ PDF fileDownloadDownload10x Volatility Edge: Bitcoin, the Four-Month Overhang Is LiftingBitcoin traders appear too complacent. Their put options are underperforming, leaving them stuck waiting for expiry before they can book losses, but once those positions roll off (May 29 and June 26), the negative gamma overhang clears with them, and so does Bitcoin’s downside bias. Two catalysts stand out this week, but the more significant shift comes at the end-of-May and end-of-June expiries, where we expect sentiment to rotate from bearish to bullish. The market is slowly shifting with a lot more demand for upside calls than downside puts. Below, we present four potential option trades.Since mid-January, Bitcoin’s aggregate gamma exposure has been deeply negative, reaching -$3.2 billion at the current $82,000 strike. In a negative gamma regime, dealers must trade with price to maintain their hedges. Rallies trigger dealer buying, which accelerates the move. Selloffs trigger dealer selling, which deepens the drop. In theory, this should produce clean trending behavior. In practice, when no dominant directional catalyst exists, negative gamma amplifies moves symmetrically in both directions, producing violent intraday swings that resolve nowhere. Sharp rallies get met with covered call selling from yield-seeking holders. Sharp dips get cushioned by put hedges. The result is low volatility, exactly the $78,000 to $82,000 band Bitcoin has traded in for weeks.That changes when a real catalyst arrives. In a negative gamma environment, the first sustained directional move doesn’t just hold, it accelerates. Dealers are forced to chase it, and this is the setup that now exists while most traders are still not positioned for a move higher.The negative gamma book is concentrated in two expiries. The May 29 expiry carries significant near-term put open interest. The June 26 expiry is the largest in the structure, with a notional of roughly $12 billion, and calls and puts are nearly balanced. As these roll off, the mechanical drag that has suppressed directional moves disappears. Instead of rolling those puts into the next quarterly expiry, we expect those puts to simply expire, and the market will have a higher chance to move higher.The trigger levels are specific. Bitcoin above $80,000 at the May 29 expiry removes the near-term put overhang and forces short-dated hedgers to cover. Bitcoin above $85,000, the gamma flip strike visible in the gamma profile, turns aggregate dealer positioning from net short to net long gamma for the first time since January.The last several sessions have already shown the early signs of this shift. Upside call demand has picked up meaningfully after months of put-dominated flow. The gamma exposure chart, deeply red since mid-January, is showing the first green bars. The direction is changing.The options structure creates the conditions. Two events this week provide the spark. The Kevin Warsh Senate confirmation vote on Monday May 11 and expected CLARITY Act progress on Thursday May 14 are precisely the kind of macro and regulatory catalysts that force defensive positioning to unwind. Institutions that placed put hedges during the January-to-April drawdown have no reason to maintain them into a confirmed Fed leadership transition and legislative crypto clarity.Despite Bitcoin’s recovery from the February lows, the options book remains net defensively positioned. Institutions have put hedges in place. Call overwriting for yield is the dominant institutional trade. Net skew across all expiries remains negative, meaning put implied volatility still trades at a premium to calls. The consensus view embedded in options positioning is sideways to lower.Daily Bitcoin option volume has collapsed from $7.6 billion at the peak to just $2.1 billion today. This is not a sign of a market bracing for downside, it is a sign of an exhausted hedging community that has largely finished selling. Declining option volume into a price recovery means the wall of supply is thinning. When the remaining hedgers are forced to cover, by price action, by expiry, or by catalyst, there is less and less offsetting flow to absorb the move.Trade 1: BTC Call Spread, May 29 Expiry Buy the May 29 $83,000 call, sell the May 29 $88,000 call. Front-end vol is near fair value at 36.5%, making the net cost reasonable. The trade targets the $85,000–$88,000 zone where call open interest is light, no structural supply overhead. The gamma flip at $85,000 means a sustained break will still see selling pressure if Bitcoin attempts to break the $90,000 level. This is the cleanest expression of the May 29 catalyst thesis.Trade 2: BTC Calendar Spread at $85,000 Buy the June 26 $85,000 call, sell the May 29 $85,000 call. Front vol (36.5%) is cheap relative to June vol (38.3%). If Bitcoin does not reach $85,000 by May 29, the short leg expires worthless and the June call is owned at a discount. If Bitcoin does reach $85,000 before May 29, the short leg hedges the inevitable vol compression on the way up. The gamma flip strike is owned for two expiries at a structural vol advantage.Trade 3: Sell ETH Implied Volatility Sell the ETH May 29 $2,100/$1,900 put spread. The +6.1 point IV/RV spread in ETH is the widest in months. Realized vol is collapsing while implied holds elevated. The put spread captures the fear premium at strikes where ETH has strong structural support from the existing put open interest. Maximum profit if ETH holds above $2,100, consistent with BTC stabilizing above $80,000 providing a floor for the entire crypto complex.Trade 4: IBIT Call Spread The IBIT IV/RV spread has compressed dramatically, from +15 points in early 2025 to just +2.1 today. This is historically tight. The last two times IBIT IV/RV compressed this much, IBIT rallied sharply shortly after as retail buyers who had been hedging gave up on downside protection entirely. Buy IBIT May $47 call vs. Sell IBIT May $50 call.This 10x Volatility Edge is published weekly under the Trading Signals publication.Licensed to: Confidential – Licensed for the exclusive use of the recipient. Redistribution, forwarding, copying, or publication without prior written permission from 10x Research is strictly prohibited and may result in termination of the subscription.Disclaimer: This email and any attached research are for informational purposes only and do not constitute investment advice, financial advice, or a recommendation to buy or sell any assets. 10x Research does not provide personalized investment advice and is not registered as a broker-dealer or investment adviser. Views are the authors’ own and subject to change. Please consult a qualified professional before making financial decisions. ©10x Research.10x Research Market Updates is a reader-supported publication. To receive new posts and support my work, consider becoming a free or paid subscriber.Subscribe",
+  "images": [
+    {
+      "url": "https://substackcdn.com/image/fetch/$s_!0Cy0!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack.com%2Fimg%2Fattachment_icon.svg",
+      "alt": "",
+      "caption": "10x Volatility Edge 2026 05 11677KB ∙ PDF file",
+      "surrounding_text": "10x Volatility Edge 2026 05 11677KB ∙ PDF fileDownload",
+      "position": 0
+    },
+    {
+      "url": "https://substackcdn.com/image/fetch/$s_!el18!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F94307e2f-f26a-4585-a9d2-94cc94f5de86_1017x610.png",
+      "alt": "",
+      "caption": "",
+      "surrounding_text": "",
+      "position": 1
+    },
+    {
+      "url": "https://substackcdn.com/image/fetch/$s_!XX2L!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F154b860f-06a7-4c4c-8c14-103aaf13279f_1062x571.png",
+      "alt": "",
+      "caption": "",
+      "surrounding_text": "",
+      "position": 2
+    },
+    {
+      "url": "https://substackcdn.com/image/fetch/$s_!Zo_L!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa8e8689d-5359-4c8e-9693-3f1b6fd78692_1065x586.png",
+      "alt": "",
+      "caption": "",
+      "surrounding_text": "",
+      "position": 3
+    },
+    {
+      "url": "https://substackcdn.com/image/fetch/$s_!SOw8!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ffc5dacf7-43ef-4774-8808-0998aeed23df_1069x597.png",
+      "alt": "",
+      "caption": "",
+      "surrounding_text": "",
+      "position": 4
+    },
+    {
+      "url": "https://substackcdn.com/image/fetch/$s_!aOef!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0bc2ebdc-4da0-40c5-8590-d268d7c63a18_1081x604.png",
+      "alt": "",
+      "caption": "",
+      "surrounding_text": "",
+      "position": 5
+    },
+    {
+      "url": "https://substackcdn.com/image/fetch/$s_!neCj!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8a3afdd6-dc45-4205-affa-a89151e63847_1041x589.png",
+      "alt": "",
+      "caption": "",
+      "surrounding_text": "",
+      "position": 6
+    },
+    {
+      "url": "https://substackcdn.com/image/fetch/$s_!xz5A!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fdb461b81-2b3a-46c3-9eee-00d7e1460ad8_988x579.png",
+      "alt": "",
+      "caption": "",
+      "surrounding_text": "",
+      "position": 7
+    }
+  ]
+}

@@ -54,7 +54,7 @@ export default function Home() {
             {[
               { value: "3", label: "Notes per run" },
               { value: "30s", label: "Generation time" },
-              { value: "$19", label: "Per month, flat" },
+              { value: "$10", label: "25 generations" },
             ].map(({ value, label }) => (
               <div key={label} className="text-center">
                 <p

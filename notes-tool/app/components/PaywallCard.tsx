@@ -1,6 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
+import { Check } from "lucide-react";
 import { createSupabaseBrowserClient } from "@/lib/supabase/client";
 
 export function PaywallCard({ prefillEmail = "" }: { prefillEmail?: string }) {
@@ -36,62 +38,86 @@ export function PaywallCard({ prefillEmail = "" }: { prefillEmail?: string }) {
   }
 
   return (
-    <div className="max-w-md mx-auto text-center">
-      <div
-        className="bg-[#14141A] border border-white/10 rounded-xl p-10"
-        style={{ boxShadow: "0 2px 20px rgba(0,0,0,0.4)" }}
-      >
-        {sent ? (
-          <>
-            <p className="text-white font-semibold text-lg mb-2">Check your email</p>
-            <p className="text-white/45 text-sm">
-              We sent a magic link to <span className="text-white/70">{email}</span>.
-              Click it to continue to checkout.
-            </p>
-          </>
-        ) : (
-          <>
-            <p className="text-white font-semibold text-lg mb-2">
-              You&apos;ve used your free generation
-            </p>
-            <p className="text-white/45 text-sm mb-8">Get 25 generations for $10</p>
+    <div className="max-w-md">
+      {sent ? (
+        <div className="bg-white border border-neutral-200 rounded-lg p-8 shadow-sm text-center">
+          <p className="text-base font-semibold text-neutral-900 mb-1">Check your email</p>
+          <p className="text-sm text-neutral-600">
+            We sent a magic link to{" "}
+            <span className="text-neutral-900 font-medium">{email}</span>.
+            Click it to continue to checkout.
+          </p>
+        </div>
+      ) : (
+        <div className="bg-white border border-neutral-200 rounded-lg p-8 shadow-sm">
+          <p className="text-xs font-semibold uppercase tracking-widest text-neutral-500 mb-3">
+            Free generation used
+          </p>
+          <h3 className="text-2xl font-semibold tracking-tight text-neutral-900 mb-2">
+            Upgrade to keep generating
+          </h3>
+          <p className="text-sm text-neutral-600 mb-8">
+            One-time payment. 25 generations. No subscription.
+          </p>
 
-            <form onSubmit={handleMagicLink} className="flex flex-col gap-3">
-              <input
-                type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="your@email.com"
-                required
-                disabled={loading}
-                className="w-full px-4 py-3 text-sm bg-white/8 border border-white/15 rounded-lg placeholder-white/25 text-white focus:outline-none focus:border-[#FF6719]/50 focus:ring-1 focus:ring-[#FF6719]/30 transition-all disabled:opacity-50"
-              />
-              <button
-                type="submit"
-                disabled={loading || !email.trim()}
-                className="px-8 py-3 text-sm font-semibold rounded-lg text-white transition-all hover:brightness-110 active:scale-[0.98] disabled:opacity-50 disabled:cursor-not-allowed"
-                style={{
-                  background: "linear-gradient(135deg, #FF6719 0%, #e04f0a 100%)",
-                  boxShadow: loading ? "none" : "0 0 28px rgba(255,103,25,0.45), 0 1px 3px rgba(0,0,0,0.5)",
-                }}
-              >
-                {loading ? (
-                  <span className="flex items-center justify-center gap-2">
-                    <span className="w-3.5 h-3.5 rounded-full border-2 border-white/30 border-t-white animate-spin inline-block" />
-                    Sending…
-                  </span>
-                ) : (
-                  "Continue with magic link →"
-                )}
-              </button>
-            </form>
+          <div className="bg-neutral-50 border border-neutral-200 rounded-md p-5 mb-6">
+            <div className="flex items-baseline gap-1.5 mb-1">
+              <span className="text-3xl font-semibold text-neutral-900">$10</span>
+              <span className="text-sm text-neutral-500">one-time</span>
+            </div>
+            <p className="text-xs text-neutral-500 mb-4">25 generations</p>
+            <ul className="space-y-2">
+              {[
+                "3 Notes per generation",
+                "Smart image matching",
+                "Copy-ready in seconds",
+              ].map((item) => (
+                <li key={item} className="flex items-center gap-2 text-sm text-neutral-700">
+                  <Check size={14} className="text-neutral-400 shrink-0" />
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
 
-            {error && (
-              <p className="text-red-400/80 text-xs mt-3">{error}</p>
-            )}
-          </>
-        )}
-      </div>
+          <form onSubmit={handleMagicLink} className="flex flex-col gap-3">
+            <input
+              type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              placeholder="your@email.com"
+              required
+              disabled={loading}
+              className="w-full px-3 py-2 border border-neutral-200 rounded-md text-sm text-neutral-900 placeholder:text-neutral-400 focus:outline-none focus:ring-2 focus:ring-neutral-900 focus:border-transparent disabled:opacity-50"
+            />
+            <button
+              type="submit"
+              disabled={loading || !email.trim()}
+              className="w-full px-6 py-3 bg-neutral-900 hover:bg-neutral-800 text-white text-base font-medium rounded-md transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+            >
+              {loading ? (
+                <span className="flex items-center justify-center gap-2">
+                  <span className="w-4 h-4 rounded-full border-2 border-white/30 border-t-white animate-spin inline-block" />
+                  Sending…
+                </span>
+              ) : (
+                "Continue to checkout"
+              )}
+            </button>
+          </form>
+
+          {error && (
+            <p className="text-xs text-red-600 mt-3">{error}</p>
+          )}
+
+          <p className="text-xs text-neutral-500 mt-5 text-center">
+            Already paid?{" "}
+            <Link href="/login" className="text-neutral-900 underline underline-offset-2">
+              Log in
+            </Link>
+          </p>
+        </div>
+      )}
     </div>
   );
 }

@@ -55,13 +55,10 @@ export default async function Home() {
             <p className="text-xs font-semibold uppercase tracking-widest text-neutral-500 mb-3">
               Source post
             </p>
-            <p className="font-semibold text-neutral-900 text-base mb-2">
-              Why I quit my agency to write a Substack full-time
+            <p className="font-semibold text-neutral-900 text-base mb-1">
+              10x Volatility Edge: Bitcoin — The Four
             </p>
-            <p className="text-neutral-600 text-sm leading-relaxed">
-              A personal essay about leaving a $180K/yr job to write online — covers the
-              financial math, the fear, and the first 90 days.
-            </p>
+            <p className="text-neutral-500 text-xs">10x Research · post.10xresearch.com</p>
           </div>
 
           <div className="flex flex-col items-center gap-1 mb-6">
@@ -74,34 +71,60 @@ export default async function Home() {
 
           <div className="flex flex-col gap-4">
             <div className="bg-white border border-neutral-200 rounded-lg p-6">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="https://substackcdn.com/image/fetch/$s_!neCj!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8a3afdd6-dc45-4205-affa-a89151e63847_1041x589.png"
+                alt=""
+                className="w-full rounded-md mb-4 object-cover max-h-48"
+              />
               <p className="text-xs font-semibold uppercase tracking-widest text-neutral-500 mb-3">
-                Hook + curiosity gap
+                Stat drop + curiosity gap
               </p>
               <p className="text-base text-neutral-900 leading-relaxed">
-                Six months ago I was making $180K running other people&apos;s marketing. Today
-                I make $4K writing a newsletter. The weird part isn&apos;t the pay cut. It&apos;s
-                that I&apos;d do it again tomorrow.
+                Bitcoin&apos;s aggregate gamma exposure hit -$3.2 billion at the $82,000 strike.
+                {" "}That number has been sitting there since mid-January, suppressing every rally,
+                cushioning every dip, and producing the exact sideways chop that&apos;s frustrated
+                traders for months.
+                {"\n\n"}It doesn&apos;t stay there forever. Two expiry dates change the math entirely
+                — and when they clear, the mechanical drag disappears with them.
               </p>
             </div>
 
             <div className="bg-white border border-neutral-200 rounded-lg p-6">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="https://substackcdn.com/image/fetch/$s_!aOef!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0bc2ebdc-4da0-40c5-8590-d268d7c63a18_1081x604.png"
+                alt=""
+                className="w-full rounded-md mb-4 object-cover max-h-48"
+              />
               <p className="text-xs font-semibold uppercase tracking-widest text-neutral-500 mb-3">
-                Contrarian take
+                Contrarian read
               </p>
               <p className="text-base text-neutral-900 leading-relaxed">
-                Everyone says &quot;don&apos;t quit your job to write.&quot; I think that&apos;s backwards.
-                The job was the thing killing my writing. The risk wasn&apos;t quitting — the
-                risk was staying.
+                Daily Bitcoin option volume collapsed from $7.6 billion to $2.1 billion.
+                {"\n\n"}Most people read that as fear. It&apos;s the opposite. An exhausted hedging
+                community that has largely finished selling. The wall of supply is thinning.
+                {"\n\n"}When the remaining hedgers are forced to cover — by price, by expiry, by
+                catalyst — there&apos;s less and less offsetting flow to absorb the move.
               </p>
             </div>
 
             <div className="bg-white border border-neutral-200 rounded-lg p-6">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="https://substackcdn.com/image/fetch/$s_!SOw8!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ffc5dacf7-43ef-4774-8808-0998aeed23df_1069x597.png"
+                alt=""
+                className="w-full rounded-md mb-4 object-cover max-h-48"
+              />
               <p className="text-xs font-semibold uppercase tracking-widest text-neutral-500 mb-3">
-                Question to readers
+                Setup reveal
               </p>
               <p className="text-base text-neutral-900 leading-relaxed">
-                Genuine question for anyone who&apos;s gone full-time on their newsletter: what&apos;s
-                the thing nobody warned you about? Not the money stuff. The other stuff.
+                The consensus view embedded in Bitcoin&apos;s options book right now: sideways to lower.
+                {"\n\n"}Net skew across all expiries is negative. Call overwriting for yield is the
+                dominant institutional trade. Put implied volatility still trades at a premium to calls.
+                {"\n\n"}The market is positioned defensively into a week with two catalysts that could
+                force every one of those hedges to unwind at once.
               </p>
             </div>
           </div>

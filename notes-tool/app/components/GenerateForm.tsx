@@ -108,25 +108,38 @@ export default function GenerateForm() {
   return (
     <div className="w-full">
       {/* Form — always visible */}
-      <form onSubmit={handleSubmit} className="flex flex-col gap-3 max-w-xl">
-        <input
-          type="url"
-          value={url}
-          onChange={(e) => setUrl(e.target.value)}
-          placeholder="https://yourname.substack.com/p/your-post"
-          disabled={loading}
-          required
-          className="w-full px-3 py-2 border border-neutral-200 rounded-md text-sm text-neutral-900 placeholder:text-neutral-400 focus:outline-none focus:ring-2 focus:ring-neutral-900 focus:border-transparent disabled:opacity-50"
-        />
-        {!isAuthed && !emailSaved && (
+      <form onSubmit={handleSubmit} className="flex flex-col gap-4 max-w-xl">
+        <div className="flex flex-col gap-1.5">
+          <label htmlFor="post-url" className="text-sm font-medium text-neutral-900">
+            Substack post URL
+          </label>
           <input
-            type="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            placeholder="your@email.com — to save your free generation"
+            id="post-url"
+            type="url"
+            value={url}
+            onChange={(e) => setUrl(e.target.value)}
+            placeholder="https://yourname.substack.com/p/your-post"
             disabled={loading}
+            required
             className="w-full px-3 py-2 border border-neutral-200 rounded-md text-sm text-neutral-900 placeholder:text-neutral-400 focus:outline-none focus:ring-2 focus:ring-neutral-900 focus:border-transparent disabled:opacity-50"
           />
+        </div>
+        {!isAuthed && !emailSaved && (
+          <div className="flex flex-col gap-1.5">
+            <label htmlFor="email" className="text-sm font-medium text-neutral-900">
+              Email address
+            </label>
+            <input
+              id="email"
+              type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              placeholder="you@example.com"
+              disabled={loading}
+              className="w-full px-3 py-2 border border-neutral-200 rounded-md text-sm text-neutral-900 placeholder:text-neutral-400 focus:outline-none focus:ring-2 focus:ring-neutral-900 focus:border-transparent disabled:opacity-50"
+            />
+            <p className="text-xs text-neutral-500">We&apos;ll use this to save your free generation.</p>
+          </div>
         )}
         <button
           type="submit"

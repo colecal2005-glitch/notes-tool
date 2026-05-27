@@ -34,7 +34,7 @@ export default async function Home() {
           </h1>
           <p className="text-xl text-neutral-600 mb-10 max-w-lg">
             You spent 6 hours on the post. Don&apos;t spend another hour on Notes
-            that flop. Paste a URL, generate, copy — done.
+            that flop. Paste a URL, generate, copy. Done.
           </p>
           <GenerateForm />
         </div>
@@ -56,9 +56,9 @@ export default async function Home() {
               Source post
             </p>
             <p className="font-semibold text-neutral-900 text-base mb-1">
-              10x Volatility Edge: Bitcoin — The Four
+              SpaceX IPO: Why the $2 Trillion Valuation Doesn&apos;t Add Up
             </p>
-            <p className="text-neutral-500 text-xs">10x Research · post.10xresearch.com</p>
+            <p className="text-neutral-500 text-xs">substack.com</p>
           </div>
 
           <div className="flex flex-col items-center gap-1 mb-6">
@@ -73,59 +73,58 @@ export default async function Home() {
             <div className="bg-white border border-neutral-200 rounded-lg p-6">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="https://substackcdn.com/image/fetch/$s_!neCj!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8a3afdd6-dc45-4205-affa-a89151e63847_1041x589.png"
+                src="https://substackcdn.com/image/fetch/$s_!opde!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fda8c6853-ad00-4e9b-bb85-b075b11f1b85_2501x2108.png"
                 alt=""
                 className="w-full rounded-md mb-4 object-cover max-h-48"
               />
               <p className="text-xs font-semibold uppercase tracking-widest text-neutral-500 mb-3">
-                Stat drop + curiosity gap
+                Stat drop + cold read
               </p>
-              <p className="text-base text-neutral-900 leading-relaxed">
-                Bitcoin&apos;s aggregate gamma exposure hit -$3.2 billion at the $82,000 strike.
-                {" "}That number has been sitting there since mid-January, suppressing every rally,
-                cushioning every dip, and producing the exact sideways chop that&apos;s frustrated
-                traders for months.
-                {"\n\n"}It doesn&apos;t stay there forever. Two expiry dates change the math entirely
-                — and when they clear, the mechanical drag disappears with them.
+              <p className="text-base text-neutral-900 leading-relaxed whitespace-pre-wrap">{`SpaceX is targeting a valuation higher than Meta, Broadcom, and Berkshire Hathaway.
+
+While posting lower revenues than Macy's.
+
+The bankers are justifying this by claiming SpaceX's total addressable market is the entire U.S. economy. All $28 trillion of it. Including an assumption that every household on earth switches to Starlink for WiFi.
+
+Starlink is a great business. The rest of this filing reads like an ayahuasca trip. New post breaks down what the numbers actually say.`}</p>
+            </div>
+
+            <div className="bg-white border border-neutral-200 rounded-lg p-6">
+              <p className="text-xs font-semibold uppercase tracking-widest text-neutral-500 mb-3">
+                Thesis with conviction
               </p>
+              <p className="text-base text-neutral-900 leading-relaxed whitespace-pre-wrap">{`SpaceX does not price at $2 trillion.
+
+Starlink? Genuinely one of the great businesses of our era. $3.3 billion in revenue in a single quarter. 36% margins. No real competitor.
+
+But stapled onto that is xAI, which burned through $12.7 billion in capex last year. More than they spent building rockets or satellites.
+
+Musk knows the only way this gets to $2 trillion is if it becomes a meme stock. He's making 30% of shares available to retail for a reason.
+
+The number that actually holds up: $600 billion.`}</p>
             </div>
 
             <div className="bg-white border border-neutral-200 rounded-lg p-6">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="https://substackcdn.com/image/fetch/$s_!aOef!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0bc2ebdc-4da0-40c5-8590-d268d7c63a18_1081x604.png"
+                src="https://substackcdn.com/image/fetch/$s_!cD9V!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F71bd7804-9af2-4be4-bb14-6dfc8644d8a1_2501x1831.png"
                 alt=""
                 className="w-full rounded-md mb-4 object-cover max-h-48"
               />
               <p className="text-xs font-semibold uppercase tracking-widest text-neutral-500 mb-3">
-                Contrarian read
+                Scene snap + pivot
               </p>
-              <p className="text-base text-neutral-900 leading-relaxed">
-                Daily Bitcoin option volume collapsed from $7.6 billion to $2.1 billion.
-                {"\n\n"}Most people read that as fear. It&apos;s the opposite. An exhausted hedging
-                community that has largely finished selling. The wall of supply is thinning.
-                {"\n\n"}When the remaining hedgers are forced to cover — by price, by expiry, by
-                catalyst — there&apos;s less and less offsetting flow to absorb the move.
-              </p>
-            </div>
+              <p className="text-base text-neutral-900 leading-relaxed whitespace-pre-wrap">{`The SpaceX S-1 opens with 14 pages of rocket photos.
 
-            <div className="bg-white border border-neutral-200 rounded-lg p-6">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="https://substackcdn.com/image/fetch/$s_!SOw8!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ffc5dacf7-43ef-4774-8808-0998aeed23df_1069x597.png"
-                alt=""
-                className="w-full rounded-md mb-4 object-cover max-h-48"
-              />
-              <p className="text-xs font-semibold uppercase tracking-widest text-neutral-500 mb-3">
-                Setup reveal
-              </p>
-              <p className="text-base text-neutral-900 leading-relaxed">
-                The consensus view embedded in Bitcoin&apos;s options book right now: sideways to lower.
-                {"\n\n"}Net skew across all expiries is negative. Call overwriting for yield is the
-                dominant institutional trade. Put implied volatility still trades at a premium to calls.
-                {"\n\n"}The market is positioned defensively into a week with two catalysts that could
-                force every one of those hedges to unwind at once.
-              </p>
+A direct quote from the filing: "We do not want humans to have the same fate as dinosaurs."
+
+That is the document you are being asked to value at $1.75 trillion.
+
+For context, when Google went public it was growing 240% and traded at 10x trailing revenue. SpaceX wants 94x while growing at 33%.
+
+The bond market just hit yields not seen since 2007. The escape hatch that stopped Trump's tariffs is gone. And retail investors are being handed 30% of the SpaceX float.
+
+All of this is connected. Full breakdown in this week's post.`}</p>
             </div>
           </div>
         </div>

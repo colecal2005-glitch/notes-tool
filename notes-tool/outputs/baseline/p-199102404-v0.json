@@ -1,0 +1,52 @@
+{
+  "post": "https://substack.com/home/post/p-199102404",
+  "source_url": "https://substack.com/home/post/p-199102404",
+  "model": "claude-sonnet-4-6",
+  "tokens": {
+    "generation": {
+      "input": 5334,
+      "output": 701
+    },
+    "matching": {
+      "input": 12030,
+      "output": 81
+    }
+  },
+  "cost_usd": {
+    "generation": 0.0265,
+    "matching": 0.0373,
+    "total": 0.0638
+  },
+  "elapsed_s": 16.8,
+  "few_shot_count": 5,
+  "image_count": 16,
+  "notes": [
+    {
+      "shape": "stat drop + cold read",
+      "text": "SpaceX is targeting a valuation higher than Meta, Broadcom, and Berkshire Hathaway.\n\nWhile posting lower revenues than Macy's.\n\nThe bankers are justifying this by claiming SpaceX's total addressable market is the entire U.S. economy. All $28 trillion of it. Including an assumption that every household on earth switches to Starlink for WiFi.\n\nStarlink is a great business. The rest of this filing reads like an ayahuasca trip. New post breaks down what the numbers actually say.",
+      "char_count": 434,
+      "source": "SpaceX's target valuation compared to Meta, Broadcom, and Berkshire Hathaway while having lower revenues than Macy's, and the $28 trillion TAM claim.",
+      "notes": null,
+      "image_url": "https://substackcdn.com/image/fetch/$s_!opde!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fda8c6853-ad00-4e9b-bb85-b075b11f1b85_2501x2108.png",
+      "image_local_path": "outputs/baseline/p-199102404/images/img-2.png"
+    },
+    {
+      "shape": "thesis with conviction",
+      "text": "SpaceX does not price at $2 trillion.\n\nStarlink? Genuinely one of the great businesses of our era. $3.3 billion in revenue in a single quarter. 36% margins. No real competitor.\n\nBut stapled onto that is xAI, which burned through $12.7 billion in capex last year. More than they spent building rockets or satellites.\n\nMusk knows the only way this gets to $2 trillion is if it becomes a meme stock. He's making 30% of shares available to retail for a reason.\n\nThe number that actually holds up: $600 billion.",
+      "char_count": 487,
+      "source": "The post's conclusion that SpaceX is a $600 billion company, and the analysis of xAI capex versus rocket/satellite spending, and the retail investor allocation strategy.",
+      "notes": null,
+      "image_url": "https://substackcdn.com/image/fetch/$s_!opde!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fda8c6853-ad00-4e9b-bb85-b075b11f1b85_2501x2108.png",
+      "image_local_path": "outputs/baseline/p-199102404/images/img-2.png"
+    },
+    {
+      "shape": "scene snap + pivot",
+      "text": "The SpaceX S-1 opens with 14 pages of rocket photos.\n\nA direct quote from the filing: \"We do not want humans to have the same fate as dinosaurs.\"\n\nThat is the document you are being asked to value at $1.75 trillion.\n\nFor context, when Google went public it was growing 240% and traded at 10x trailing revenue. SpaceX wants 94x while growing at 33%.\n\nThe bond market just hit yields not seen since 2007. The escape hatch that stopped Trump's tariffs is gone. And retail investors are being handed 30% of the SpaceX float.\n\nAll of this is connected. Full breakdown in this week's post.",
+      "char_count": 546,
+      "source": "The S-1's opening 14 pages of rocket photos and the dinosaur quote, combined with the Google IPO comparison and the bond yield context.",
+      "notes": null,
+      "image_url": "https://substackcdn.com/image/fetch/$s_!cD9V!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F71bd7804-9af2-4be4-bb14-6dfc8644d8a1_2501x1831.png",
+      "image_local_path": "outputs/baseline/p-199102404/images/img-7.png"
+    }
+  ]
+}
